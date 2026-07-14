@@ -1,39 +1,62 @@
-NMA Edo State Election System
+# NMA Edo State Election System
 
-A secure web-based election platform developed for the Nigerian Medical Association (NMA), Edo State Branch. The system is designed to provide a reliable and transparent process for managing elections, users, voting activities, and results.
+A secure web-based election platform for the **Nigerian Medical Association (NMA), Edo State Branch**.
 
-Status
+The application enables verified members to register, authenticate, participate in elections, and view election results through a modern web interface.
 
-🚧 Under Active Development
+## Status
 
-Current Progress
+🚧 **Under Active Development**
+
+### Progress
 
 - ✅ Project setup
-- ✅ User database model
-- 🚧 Authentication system
-- ⏳ Candidate management
-- ⏳ Voting system
-- ⏳ Election results and reporting
+- ✅ PostgreSQL database design
+- ✅ User registration
+- ✅ JWT authentication
+- ✅ Password hashing
+- 🚧 Landing page (in progress)
+- 🚧 Live results dashboard (in progress)
+- 🚧 Candidate management
+- 🚧 Voting system
+- ⏳ Real-time results
+- ⏳ Admin dashboard
 
-Planned Features
+## Tech Stack
 
-- Secure user authentication
-- Role-based access control
-- Candidate management
-- Election position management
-- Secure voting process
-- One-member-one-vote enforcement
-- Transparent result generation
-- Election administration dashboard
-
-Technology Stack
-
+### Backend
 - FastAPI
 - PostgreSQL
 - SQLAlchemy
-- JWT Authentication
-- React (Frontend)
+- Pydantic
+- Passlib (bcrypt)
+- Python-JOSE (JWT)
 
-License
+### Frontend
+- React
+- Tailwind CSS
+- React Router
 
-This project is proprietary software developed for the Nigerian Medical Association (NMA), Edo State Branch.
+## Getting Started
+
+### Backend
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## License
+
+This project is proprietary software developed for the **Nigerian Medical Association (NMA), Edo State Branch**. All rights reserved.
