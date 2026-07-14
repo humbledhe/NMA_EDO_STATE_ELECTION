@@ -7,9 +7,9 @@ from enum import Enum as Enum
 # Local modules
 from app.db.base import Base
 
-class Role(Enum):
-    ADMIN = "admin",
-    VOTER = "voter",
+class Role(str, Enum):
+    ADMIN = "admin"
+    VOTER = "voter"
 
 class User(Base):
     __tablename__ = "users"

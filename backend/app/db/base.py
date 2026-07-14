@@ -1,7 +1,4 @@
-from sqlalchemy.orm import DeclarativeBase
+# Third Party
+from sqlalchemy.orm import declarative_base
 
-class Base(DeclarativeBase):
-    pass
-
-# Import your models AFTER Base is defined
-from app.users.model import User
+Base = declarative_base()

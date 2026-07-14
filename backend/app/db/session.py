@@ -7,4 +7,4 @@ DATABASE_URL=f"postgresql+psycopg://{settings.DATABASE_USERNAME}:{settings.DATAB
 
 engine = create_engine(DATABASE_URL)
 
-SessionLocal = sessionMaker(bind=engine)
+SessionLocal = sessionmaker(bind=engine)
