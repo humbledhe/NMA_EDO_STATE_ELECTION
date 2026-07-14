@@ -19,3 +19,4 @@ class User(Base):
     email: Mapped[str] = mapped_column(unique=True, nullable=False)
     role: Mapped[Role] = mapped_column(SQLEnum(Role), default=Role.VOTER, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    password: Mapped[str] = mapped_column(nullable=False)

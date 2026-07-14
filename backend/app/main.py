@@ -2,6 +2,7 @@
 from fastapi import FastAPI
 # Local modules
 from app.users.route import router as users_route
+from app.auth.route import router as auth_route
 
 
 app = FastAPI(
@@ -36,3 +37,4 @@ openapi_url="/openapi.json",
 )
 
 app.include_router(users_route)
+app.include_router(auth_route)
