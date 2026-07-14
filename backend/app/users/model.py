@@ -1,7 +1,7 @@
 # Third Party
-from sqlalchemy import DateTime, func
+from sqlalchemy import DateTime
 from sqlalchemy import Enum as SQLEnum
-from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase
+from sqlalchemy.orm import Mapped, mapped_column
 from datetime import datetime
 from enum import Enum as Enum
 # Local modules
