@@ -1,0 +1,18 @@
+// Third Party
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Local modules
+import LandingPage from "../pages/LandingPage.jsx";
+import CreateAccount from "../pages/CreateAccount.jsx";
+
+function AppRoutes() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/signUp" element={<CreateAccount />} />
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+export default AppRoutes;
